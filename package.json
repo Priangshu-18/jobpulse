@@ -5,7 +5,11 @@
   "private": true,
   "scripts": {
     "dev": "npx serve@latest . -l 3000",
-    "start": "npx serve@latest ."
+    "start": "npx serve@latest .",
+    "scrape": "node scripts/update-jobs.js"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
   },
   "keywords": ["jobs", "tech", "developer", "portal", "ai-ml"],
   "author": "Priangshu Mukherjee",
