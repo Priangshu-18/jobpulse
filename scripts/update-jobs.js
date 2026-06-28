@@ -20,7 +20,7 @@ const EXCLUDE_DESC = [
   'mtech required', 'post graduate required', 'postgraduation required', 'pg required'
 ];
 
-// Keywords matching user's CSE skills or basic computer skills
+// Keywords matching user's CSE skills, basic computer, or 10th/12th qualifications
 const INCLUDE_KEYWORDS = [
   // CSE / Development
   'developer', 'engineer', 'react', 'node', 'python', 'django', 'fastapi', 
@@ -28,7 +28,9 @@ const INCLUDE_KEYWORDS = [
   'data scientist', 'data analyst', 'ai', 'ml', 'machine learning', 'devops',
   // Basic Computer / Clerk
   'excel', 'word', 'typing', 'data entry', 'clerk', 'office assistant', 
-  'computer operator', 'office executive', 'billing', 'tally', 'back office'
+  'computer operator', 'office executive', 'billing', 'tally', 'back office',
+  // 10th & 12th Pass Qualifications
+  '10th pass', '12th pass', 'matric', 'intermediate pass', 'chsl', 'mts', 'ssc chsl', 'ssc mts'
 ];
 
 async function updateJobs() {

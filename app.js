@@ -16,7 +16,8 @@ const CONFIG = {
     aiml: ['tensorflow', 'langchain', 'langgraph', 'scikit-learn', 'sklearn', 'gemini', 'ai', 'machine learning', 'artificial intelligence', 'deep learning', 'nlp', 'natural language', 'computer vision', 'opencv', 'pandas', 'numpy', 'streamlit'],
     frontend: ['html', 'html5', 'css', 'css3', 'tailwind', 'tailwindcss', 'sass', 'scss'],
     tools: ['git', 'github', 'firebase', 'appwrite', 'postman', 'docker', 'vercel', 'netlify', 'aws', 'jwt', 'jwt auth'],
-    computer_office: ['excel', 'word', 'powerpoint', 'ms office', 'data entry', 'typing', 'clerk', 'back office', 'tally', 'billing', 'computer operator', 'administration', 'documentation']
+    computer_office: ['excel', 'word', 'powerpoint', 'ms office', 'data entry', 'typing', 'clerk', 'back office', 'tally', 'billing', 'computer operator', 'administration', 'documentation'],
+    qualifications: ['10th pass', '12th pass', 'matric', 'intermediate', 'chsl', 'mts', 'ssc chsl', 'ssc mts']
   },
 
   // Location priority mapping
