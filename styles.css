@@ -1417,6 +1417,14 @@ a:hover {
     --navbar-height: 60px;
   }
 
+  .search-section {
+    position: relative;
+    top: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+  }
+
   .nav-links {
     display: none;
     position: fixed;
@@ -1448,11 +1456,24 @@ a:hover {
   }
 
   .filter-bar {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+    width: 100%;
+  }
+
+  .filter-group {
+    width: 100%;
   }
 
   .filter-select {
     width: 100%;
+  }
+
+  .clear-btn {
+    grid-column: span 2;
+    width: 100%;
+    text-align: center;
   }
 
   .jobs-grid,
@@ -1463,7 +1484,12 @@ a:hover {
   .results-bar {
     flex-direction: column;
     gap: var(--space-sm);
-    align-items: flex-start;
+    align-items: stretch;
+  }
+
+  .results-bar .sort-group {
+    justify-content: space-between;
+    margin-top: var(--space-xs);
   }
 
   .modal {
