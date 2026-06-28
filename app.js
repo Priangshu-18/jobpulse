@@ -15,7 +15,8 @@ const CONFIG = {
     secondary: ['fastapi', 'fast api', 'django', 'mongodb', 'mongo', 'mysql', 'php', 'rest api', 'rest apis', 'restful', 'express', 'express.js'],
     aiml: ['tensorflow', 'langchain', 'langgraph', 'scikit-learn', 'sklearn', 'gemini', 'ai', 'machine learning', 'artificial intelligence', 'deep learning', 'nlp', 'natural language', 'computer vision', 'opencv', 'pandas', 'numpy', 'streamlit'],
     frontend: ['html', 'html5', 'css', 'css3', 'tailwind', 'tailwindcss', 'sass', 'scss'],
-    tools: ['git', 'github', 'firebase', 'appwrite', 'postman', 'docker', 'vercel', 'netlify', 'aws', 'jwt', 'jwt auth']
+    tools: ['git', 'github', 'firebase', 'appwrite', 'postman', 'docker', 'vercel', 'netlify', 'aws', 'jwt', 'jwt auth'],
+    computer_office: ['excel', 'word', 'powerpoint', 'ms office', 'data entry', 'typing', 'clerk', 'back office', 'tally', 'billing', 'computer operator', 'administration', 'documentation']
   },
 
   // Location priority mapping
@@ -173,7 +174,7 @@ async function loadJobs() {
   try {
     const results = await Promise.allSettled([
       fetchLocalJobs(),
-      fetchRemotiveJobs()
+      fetchLiveJobs()
     ]);
 
     let jobs = [];
@@ -225,6 +226,18 @@ async function fetchLocalJobs() {
   } catch (e) {
     console.warn('Local jobs database not available:', e.message);
     return [];
+  }
+}
+
+async function fetchLiveJobs() {
+  try {
+    const res = await fetch(CONFIG.API_ENDPOINT);
+    if (!res.ok) throw new Error('API failed');
+    const data = await res.json();
+    return data.jobs || [];
+  } catch (e) {
+    console.warn('Backend API not available, falling back to direct Remotive fetch:', e.message);
+    return fetchRemotiveJobs();
   }
 }
 
@@ -471,6 +484,8 @@ function matchesRoleFilter(job, filter) {
     case 'software': return title.includes('software engineer') || title.includes('software developer') || title.includes('sde');
     case 'data': return title.includes('data analyst') || title.includes('data engineer') || title.includes('data scientist');
     case 'devops': return title.includes('devops') || title.includes('sre') || title.includes('platform engineer') || title.includes('cloud');
+    case 'dataentry': return title.includes('data entry') || title.includes('typing') || title.includes('billing') || title.includes('operator') || desc.includes('data entry');
+    case 'clerk': return title.includes('clerk') || title.includes('assistant') || title.includes('executive') || title.includes('excel') || title.includes('back office') || title.includes('office');
     case 'other': return true;
     default: return true;
   }

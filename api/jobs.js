@@ -1,5 +1,5 @@
 // Vercel Serverless Function — Job Aggregation API
-// Fetches jobs from free public APIs (Remotive) and filters for relevance
+// Fetches jobs from free public APIs (Remotive + optionally Adzuna India) and filters for relevance
 
 const EXCLUDE_TITLE_TERMS = [
   'senior', 'sr.', 'sr ', 'lead', 'principal', 'staff', 'distinguished',
@@ -15,8 +15,7 @@ const EXCLUDE_EXPERIENCE = [
 const RELEVANT_CATEGORIES = [
   'software-dev',
   'data',
-  'devops',
-  'all-others'
+  'devops'
 ];
 
 export default async function handler(req, res) {
@@ -37,7 +36,7 @@ export default async function handler(req, res) {
   try {
     const allJobs = [];
 
-    // Fetch from Remotive API (free, no key needed)
+    // 1. Fetch from Remotive API (free, no key needed)
     const categories = category ? [category] : RELEVANT_CATEGORIES;
 
     for (const cat of categories) {
@@ -45,20 +44,46 @@ export default async function handler(req, res) {
         const url = `https://remotive.com/api/remote-jobs?category=${cat}&limit=${limit}`;
         const response = await fetch(url, {
           headers: { 'Accept': 'application/json' },
-          signal: AbortSignal.timeout(8000)
+          signal: AbortSignal.timeout(6000)
         });
 
-        if (!response.ok) continue;
-
-        const data = await response.json();
-        const jobs = (data.jobs || [])
-          .filter(job => !shouldExclude(job))
-          .map(job => transformRemotiveJob(job));
-
-        allJobs.push(...jobs);
+        if (response.ok) {
+          const data = await response.json();
+          const jobs = (data.jobs || [])
+            .filter(job => !shouldExclude(job))
+            .map(job => transformRemotiveJob(job));
+          allJobs.push(...jobs);
+        }
       } catch (err) {
-        console.warn(`Failed to fetch category ${cat}:`, err.message);
-        continue;
+        console.warn(`Failed to fetch Remotive category ${cat}:`, err.message);
+      }
+    }
+
+    // 2. Fetch from Adzuna India API (if app_id and app_key are configured in Vercel env)
+    const adzunaAppId = process.env.ADZUNA_APP_ID;
+    const adzunaAppKey = process.env.ADZUNA_APP_KEY;
+
+    if (adzunaAppId && adzunaAppKey) {
+      // Query for multiple profiles: tech, data entry, clerk/excel
+      const queries = ['developer', 'data entry', 'excel clerk'];
+      for (const q of queries) {
+        try {
+          const url = `https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=${adzunaAppId}&app_key=${adzunaAppKey}&results_per_page=20&what=${encodeURIComponent(q)}`;
+          const response = await fetch(url, {
+            headers: { 'Accept': 'application/json' },
+            signal: AbortSignal.timeout(6000)
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            const jobs = (data.results || [])
+              .filter(job => !shouldExclude(job))
+              .map(job => transformAdzunaJob(job));
+            allJobs.push(...jobs);
+          }
+        } catch (err) {
+          console.warn(`Failed to fetch Adzuna query "${q}":`, err.message);
+        }
       }
     }
 
@@ -109,7 +134,7 @@ function shouldExclude(job) {
   if (EXCLUDE_EXPERIENCE.some(term => title.includes(term) || desc.includes(term))) return true;
 
   // Exclude if requires masters/PhD
-  if (desc.includes('masters required') || desc.includes('phd required') || desc.includes('doctorate required')) return true;
+  if (desc.includes('masters required') || desc.includes('phd required') || desc.includes('doctorate required') || desc.includes('post graduate required')) return true;
 
   return false;
 }
@@ -130,5 +155,38 @@ function transformRemotiveJob(job) {
     source: 'Remotive',
     description: job.description || 'No description available.',
     companyLogo: job.company_logo || ''
+  };
+}
+
+function transformAdzunaJob(job) {
+  // Extract category type
+  let category = 'private';
+  const title = (job.title || '').toLowerCase();
+  if (title.includes('govt') || title.includes('government') || title.includes('public sector')) {
+    category = 'government';
+  }
+
+  // Determine work type
+  let type = 'on-site';
+  const location = (job.location?.display_name || '').toLowerCase();
+  if (title.includes('remote') || title.includes('wfh') || title.includes('work from home') || location.includes('remote')) {
+    type = 'remote';
+  }
+
+  return {
+    id: `adzuna-${job.id}`,
+    title: job.title || 'Untitled Position',
+    company: job.company?.display_name || 'Unknown Company',
+    location: job.location?.display_name || 'India',
+    type: type,
+    category: category,
+    salary: job.salary_min ? `₹${Math.round(job.salary_min).toLocaleString('en-IN')} - ₹${Math.round(job.salary_max || job.salary_min * 1.5).toLocaleString('en-IN')} LPA` : 'Not disclosed',
+    skills: (job.category?.label ? [job.category.label] : []).concat(job.title.split(' ').filter(w => w.length > 3)),
+    experience: '0-3 years',
+    postedDate: job.created || new Date().toISOString().split('T')[0],
+    applyUrl: job.redirect_url || '#',
+    source: 'Adzuna India',
+    description: job.description || 'No description available.',
+    companyLogo: ''
   };
 }
