@@ -1,6 +1,70 @@
 {
   "jobs": [
     {
+      "id": "scraped-1784089507149-b478r",
+      "title": "CCRS Recruitment 2026: Apply for LDC, UDC & Social Worker Posts",
+      "company": "HaryanaJobs National",
+      "location": "Pan India",
+      "type": "on-site",
+      "category": "government",
+      "salary": "Government Pay Scale / As per rules",
+      "skills": [],
+      "experience": "Graduate / Entry Level",
+      "postedDate": "2026-07-14",
+      "applyUrl": "https://haryanajobs.in/ccrs-recruitment-2026/",
+      "source": "HaryanaJobs National",
+      "description": "CCRS Recruitment 2026: Apply for LDC, UDC & Social Worker Posts"
+    },
+    {
+      "id": "scraped-1784089507149-cq8gv",
+      "title": "NCL Mining Sirdar Recruitment 2026: Apply Online for 259 Posts",
+      "company": "HaryanaJobs National",
+      "location": "Pan India",
+      "type": "on-site",
+      "category": "government",
+      "salary": "Government Pay Scale / As per rules",
+      "skills": [],
+      "experience": "Graduate / Entry Level",
+      "postedDate": "2026-07-14",
+      "applyUrl": "https://haryanajobs.in/ncl-mining-sirdar-recruitment-2026/",
+      "source": "HaryanaJobs National",
+      "description": "NCL Mining Sirdar Recruitment 2026: Apply Online for 259 Posts"
+    },
+    {
+      "id": "scraped-1784089507149-wgfpr",
+      "title": "MNSS Rai Recruitment 2026: Apply for LDC & Steno Posts",
+      "company": "HaryanaJobs National",
+      "location": "Pan India",
+      "type": "on-site",
+      "category": "government",
+      "salary": "Government Pay Scale / As per rules",
+      "skills": [
+        "Ai"
+      ],
+      "experience": "Graduate / Entry Level",
+      "postedDate": "2026-07-14",
+      "applyUrl": "https://haryanajobs.in/mnss-rai-recruitment-2026/",
+      "source": "HaryanaJobs National",
+      "description": "MNSS Rai Recruitment 2026: Apply for LDC & Steno Posts"
+    },
+    {
+      "id": "scraped-1784089507149-ybcnz",
+      "title": "RRB Section Controller Recruitment 2026: Notification Out for 119 Posts, Check Details",
+      "company": "HaryanaJobs National",
+      "location": "Pan India",
+      "type": "on-site",
+      "category": "government",
+      "salary": "Government Pay Scale / As per rules",
+      "skills": [
+        "Ai"
+      ],
+      "experience": "Graduate / Entry Level",
+      "postedDate": "2026-07-14",
+      "applyUrl": "https://haryanajobs.in/rrb-section-controller-recruitment-2026/",
+      "source": "HaryanaJobs National",
+      "description": "RRB Section Controller Recruitment 2026: Notification Out for 119 Posts, Check Details"
+    },
+    {
       "id": "scraped-1783831817669-zihqg",
       "title": "RRC Central Railway Sports Quota Recruitment 2026 – Notification Out for 59 Group C & Level-1 Posts",
       "company": "HaryanaJobs National",
