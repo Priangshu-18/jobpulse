@@ -1,6 +1,21 @@
 {
   "jobs": [
     {
+      "id": "scraped-1786934368025-xmf84",
+      "title": "HKRN Recruitment 2026: Apply Online for 7600+ Posts",
+      "company": "HaryanaJobs National",
+      "location": "Pan India",
+      "type": "on-site",
+      "category": "government",
+      "salary": "Government Pay Scale / As per rules",
+      "skills": [],
+      "experience": "Graduate / Entry Level",
+      "postedDate": "2026-08-16",
+      "applyUrl": "https://haryanajobs.in/haryana-kaushal-rojgar-nigam/",
+      "source": "HaryanaJobs National",
+      "description": "HKRN Recruitment 2026: Apply Online for 7600+ Posts"
+    },
+    {
       "id": "scraped-1786847994746-wsnib",
       "title": "MP High Court Assistant Grade-3 Recruitment 2026: Notification Out for 1174 Posts",
       "company": "HaryanaJobs National",
@@ -1335,23 +1350,6 @@
       "description": "Haryana HSSC Recruitment 2026 – Notification Out, Apply Online, Eligibility, Vacancy & Complete Details"
     },
     {
-      "id": "scraped-1783141607086-iywq4",
-      "title": "RRI Scientific & Technical Recruitment 2026 – Apply Online for Engineer, Engineering Assistant & Tradesman Posts",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [
-        "Engineer"
-      ],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-07-03",
-      "applyUrl": "https://haryanajobs.in/rri-scientific-technical-recruitment-2026/",
-      "source": "HaryanaJobs National",
-      "description": "RRI Scientific & Technical Recruitment 2026 – Apply Online for Engineer, Engineering Assistant & Tradesman Posts"
-    },
-    {
       "id": "scraped-1783141607086-q8zjh",
       "title": "Delhi CSIR IGIB Recruitment 2026: Notification Out for Technician Posts, Apply Online",
       "company": "HaryanaJobs National",
@@ -1397,21 +1395,6 @@
       "applyUrl": "https://haryanajobs.in/hssc-group-c-phase-iii-vacancy-2026/",
       "source": "HaryanaJobs National",
       "description": "HSSC Group C 06/2026 Recruitment 2026: PMT & Shortlisted Candidates List Out for  Warder, AS & Matron Posts"
-    },
-    {
-      "id": "scraped-1783055534910-ghvdo",
-      "title": "MPESB Agriculture Extension Officer Recruitment 2026 – Apply Online for 2784 Posts",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-07-03",
-      "applyUrl": "https://haryanajobs.in/mpesb-agriculture-extension-officer-recruitment-2026/",
-      "source": "HaryanaJobs National",
-      "description": "MPESB Agriculture Extension Officer Recruitment 2026 – Apply Online for 2784 Posts"
     },
     {
       "id": "cur-001",
