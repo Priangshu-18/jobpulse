@@ -1,6 +1,23 @@
 {
   "jobs": [
     {
+      "id": "scraped-1788502901851-dkh6d",
+      "title": "GATE 2027 Notification – Registration Starts from 02 September , Check Eligibility, Exam Dates & Complete Details",
+      "company": "HaryanaJobs National",
+      "location": "Pan India",
+      "type": "on-site",
+      "category": "government",
+      "salary": "Government Pay Scale / As per rules",
+      "skills": [
+        "Ai"
+      ],
+      "experience": "Graduate / Entry Level",
+      "postedDate": "2026-09-02",
+      "applyUrl": "https://haryanajobs.in/gate-2027/",
+      "source": "HaryanaJobs National",
+      "description": "GATE 2027 Notification – Registration Starts from 02 September , Check Eligibility, Exam Dates & Complete Details"
+    },
+    {
       "id": "scraped-1788415652212-lm0l8",
       "title": "PGIMER Chandigarh Recruitment 2026: Apply Online for Various Posts",
       "company": "HaryanaJobs National",
@@ -1515,53 +1532,6 @@
       "applyUrl": "https://haryanajobs.in/cnp-nashik-recruitment-2026/",
       "source": "HaryanaJobs National",
       "description": "CNP Nashik 534 Posts Exam Date Out, Check Notice"
-    },
-    {
-      "id": "scraped-1784695487090-cuutu",
-      "title": "Haryana ULB Recruitment 2026: Notification Out for 150 Posts, Apply Online",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-07-21",
-      "applyUrl": "https://haryanajobs.in/haryana-ulb-engineering-associate-recruitment-2026/",
-      "source": "HaryanaJobs National",
-      "description": "Haryana ULB Recruitment 2026: Notification Out for 150 Posts, Apply Online"
-    },
-    {
-      "id": "scraped-1784695487090-glueg",
-      "title": "RRB JE Recruitment 2026 – Notice for 4098 Junior Engineer, DMS & CMA Posts",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [
-        "Engineer"
-      ],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-07-21",
-      "applyUrl": "https://haryanajobs.in/rrb-je-recruitment-2026/",
-      "source": "HaryanaJobs National",
-      "description": "RRB JE Recruitment 2026 – Notice for 4098 Junior Engineer, DMS & CMA Posts"
-    },
-    {
-      "id": "scraped-1784695487090-a47kd",
-      "title": "ISRO Assistant, JPA, UDC & Stenographer Recruitment 2026 – Apply Online",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-07-21",
-      "applyUrl": "https://haryanajobs.in/isro-recruitment-2026/",
-      "source": "HaryanaJobs National",
-      "description": "ISRO Assistant, JPA, UDC & Stenographer Recruitment 2026 – Apply Online"
     },
     {
       "id": "cur-001",
