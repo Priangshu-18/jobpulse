@@ -1,6 +1,23 @@
 {
   "jobs": [
     {
+      "id": "scraped-1791097784454-f0z6q",
+      "title": "Punjab & Haryana High Court Clerk Recruitment 2026 – Notification Out for 1270 Posts, Apply Online",
+      "company": "HaryanaJobs National",
+      "location": "Pan India",
+      "type": "on-site",
+      "category": "government",
+      "salary": "Government Pay Scale / As per rules",
+      "skills": [
+        "Clerk"
+      ],
+      "experience": "Graduate / Entry Level",
+      "postedDate": "2026-10-03",
+      "applyUrl": "https://haryanajobs.in/punjab-haryana-high-court-clerk-recruitment-2026-notification-1270-posts/",
+      "source": "HaryanaJobs National",
+      "description": "Punjab & Haryana High Court Clerk Recruitment 2026 – Notification Out for 1270 Posts, Apply Online"
+    },
+    {
       "id": "scraped-1790925357398-o2yzk",
       "title": "HKRN Recruitment 2026: Apply Online for 7600 Posts",
       "company": "HaryanaJobs National",
@@ -1118,53 +1135,6 @@
       "applyUrl": "https://haryanajobs.in/rrb-alp-recruitment-2026/",
       "source": "HaryanaJobs National",
       "description": "RRB ALP Recruitment 2026: Apply Online for 11127 Posts, Check Details"
-    },
-    {
-      "id": "scraped-1787280138620-22btx",
-      "title": "Ship Building Centre SBC Recruitment 2026 –  Group C Posts, Online Form",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-08-20",
-      "applyUrl": "https://haryanajobs.in/ship-building-centre-sbc-recruitment-2026/",
-      "source": "HaryanaJobs National",
-      "description": "Ship Building Centre SBC Recruitment 2026 –  Group C Posts, Online Form"
-    },
-    {
-      "id": "scraped-1787280138620-tdcq7",
-      "title": "Nainital Bank Specialist Officer Recruitment 2026 – Notification Released & Apply Online",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [
-        "Ai"
-      ],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-08-20",
-      "applyUrl": "https://haryanajobs.in/nainital-bank-specialist-officer-recruitment-2026/",
-      "source": "HaryanaJobs National",
-      "description": "Nainital Bank Specialist Officer Recruitment 2026 – Notification Released & Apply Online"
-    },
-    {
-      "id": "scraped-1787280138620-ip6td",
-      "title": "South Indian Bank Junior Officer Recruitment 2026 – Business Promotion Officer, Apply Online",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-08-20",
-      "applyUrl": "https://haryanajobs.in/south-indian-bank-junior-officer-recruitment-2026-2/",
-      "source": "HaryanaJobs National",
-      "description": "South Indian Bank Junior Officer Recruitment 2026 – Business Promotion Officer, Apply Online"
     },
     {
       "id": "cur-001",
