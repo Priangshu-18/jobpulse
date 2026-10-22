@@ -1,6 +1,21 @@
 {
   "jobs": [
     {
+      "id": "scraped-1792650074510-hbblr",
+      "title": "SCL Recruitment 2026 – Apply Online for 83 Administrative and Technical Posts",
+      "company": "HaryanaJobs National",
+      "location": "Pan India",
+      "type": "on-site",
+      "category": "government",
+      "salary": "Government Pay Scale / As per rules",
+      "skills": [],
+      "experience": "Graduate / Entry Level",
+      "postedDate": "2026-10-21",
+      "applyUrl": "https://haryanajobs.in/scl-recruitment-2026/",
+      "source": "HaryanaJobs National",
+      "description": "SCL Recruitment 2026 – Apply Online for 83 Administrative and Technical Posts"
+    },
+    {
       "id": "scraped-1792563466356-bbqg1",
       "title": "RRB Station Master Recruitment 2026 – Notification Out for 1200 Posts",
       "company": "HaryanaJobs National",
@@ -1255,24 +1270,6 @@
       "applyUrl": "https://haryanajobs.in/uksssc-inter-level-recruitment-2026/",
       "source": "HaryanaJobs National",
       "description": "UKSSSC Inter Level Recruitment 2026 – Apply Online for 553 Posts"
-    },
-    {
-      "id": "scraped-1788847986484-x76ax",
-      "title": "SSC CHSL Recruitment 2026: Apply Online for LDC & DEO Posts",
-      "company": "HaryanaJobs National",
-      "location": "Pan India",
-      "type": "on-site",
-      "category": "government",
-      "salary": "Government Pay Scale / As per rules",
-      "skills": [
-        "Chsl",
-        "Ssc chsl"
-      ],
-      "experience": "Graduate / Entry Level",
-      "postedDate": "2026-09-07",
-      "applyUrl": "https://haryanajobs.in/ssc-chsl-recruitment-2026/",
-      "source": "HaryanaJobs National",
-      "description": "SSC CHSL Recruitment 2026: Apply Online for LDC & DEO Posts"
     },
     {
       "id": "cur-001",
